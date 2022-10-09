@@ -1,0 +1,1163 @@
+/* init */
+
+:root {
+  --darkBackground: #28282a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* nav-bar */
+.nav-bar {
+  background-color: var(--darkBackground);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.nav-bar .nav-isi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 2rem;
+  position: static;
+}
+
+.nav-bar .nav-isi .nav-logo {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-bar .nav-isi .nav-logo img {
+  width: 20px;
+  height: 20px;
+}
+
+.nav-bar .nav-isi .nav-logo a {
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 0.4rem;
+}
+
+.nav-bar .nav-isi .nav-text {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-bar .nav-isi .nav-text a {
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.nav-bar .nav-isi .nav-text .nav-text-isi {
+  transition: color 1s ease-out 0.1s, border-bottom 1s ease-in;
+}
+
+.nav-bar .nav-isi .nav-text .nav-text-isi:hover {
+  color: #ff6600;
+  border-bottom: 1px solid #ff6600;
+}
+
+.nav-bar .nav-isi .nav-text li:last-child {
+  background-color: #ff781f;
+  padding: 0.6rem 0.8rem;
+  border-radius: 5rem;
+  transition: 0.5s;
+}
+
+.nav-bar .nav-isi .nav-text li:last-child:hover {
+  background-color: rgba(255, 120, 31, 0.7);
+}
+
+.nav-bar .search {
+  width: 100%;
+  padding: 0 2rem 1rem 2rem;
+}
+
+.nav-bar .search .search-bar {
+  width: 40%;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-bar .search .search-bar input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ff781f;
+}
+
+.nav-bar .search .search-bar button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0 2rem;
+  background-color: #ff781f;
+  color: white;
+  border: none;
+  font-weight: bold;
+  font-size: 0.8rem;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.nav-bar .search .search-bar button:hover {
+  background-color: rgba(255, 120, 31, 0.9);
+}
+
+.navbar .nav-isi .square-button {
+  display: none;
+}
+
+.nav-responsive {
+  display: none;
+}
+
+/* home */
+.home {
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+
+.home video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.home .home-isi {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(18, 18, 18, 0.8);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  box-sizing: border-box;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.home .home-isi .home-isi-kotak {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.home .home-isi .home-isi-kotak h1 {
+  font-size: 5rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.home .home-isi .home-isi-kotak h4 {
+  font-size: 3rem;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+.home .home-isi .home-isi-kotak p {
+  color: white;
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.home .home-isi .home-isi-kotak .home-button {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.home .home-isi .home-isi-kotak .home-button a button {
+  padding: 0.5rem 1rem;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0.4rem 0;
+  width: 100%;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.home .home-isi .home-isi-kotak .home-button a button:hover {
+  transform: translateY(-0.3rem);
+}
+
+.home .home-isi .home-isi-kotak .home-button a:first-child button {
+  background-color: #bf53ff;
+  border: 1px solid #ffaaff;
+}
+
+.home .home-isi .home-isi-kotak .home-button a:last-child button {
+  background-color: #ff781f;
+  border: 1px solid #ff8b3d;
+}
+
+/* about */
+
+.about {
+  padding: 3rem 4rem;
+  box-sizing: border-box;
+}
+
+.about .about-isi {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.about .about-isi .about-text {
+  flex: 1;
+  padding: 1rem 2rem;
+}
+
+.about .about-isi .about-text h2 {
+  color: rgba(255, 120, 31, 0.7);
+  font-size: 4rem;
+  font-weight: 800;
+}
+.about .about-isi .about-text h2 span {
+  display: block;
+  margin-top: -1rem;
+}
+
+.about .about-isi .about-text p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.about .about-isi .about-text button {
+  background-color: #bf53ff;
+  border: 1px solid #ffaaff;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  color: white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.about .about-isi .about-text button:hover {
+  transform: translateY(-0.3rem);
+}
+
+.about .about-isi .about-img {
+  flex: 1;
+  display: grid;
+  grid-template-areas:
+    'aboutOne aboutTwo'
+    'aboutOne aboutThree'
+    'aboutOne aboutThree';
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0.1rem;
+  box-sizing: border-box;
+}
+
+.about .about-isi .about-img .about-one {
+  grid-area: aboutOne;
+  background-image: url(../img/about1.jpg);
+  background-size: cover;
+}
+.about .about-isi .about-img .about-two {
+  grid-area: aboutTwo;
+  background-image: url(../img/about2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.about .about-isi .about-img .about-three {
+  grid-area: aboutThree;
+  background-image: url(../img/about3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.about-brand {
+  padding: 2rem 0;
+}
+
+.about-brand .brand-judul {
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-brand h3 {
+  background-color: #ffaaff;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.9);
+  width: fit-content;
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.about-brand .brand-isi {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 2.5rem;
+}
+
+/* product */
+
+.product {
+  width: 100%;
+  padding: 0 4rem;
+  box-sizing: border-box;
+}
+
+.product .product-konten {
+  background-color: rgba(18, 18, 18, 0.8);
+  box-sizing: border-box;
+}
+
+.product .product-konten .product-judul {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.product .product-konten .product-judul h3 {
+  color: white;
+  padding: 1rem;
+  width: fit-content;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.product .product-konten .product-isi {
+  width: 100%;
+  box-sizing: border-box;
+  padding-bottom: 2rem;
+}
+
+.product .product-konten .product-isi .carousel {
+  display: flex;
+  justify-content: space-around;
+}
+
+.product .product-konten .product-isi .carousel .card {
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: white;
+  height: 100%;
+}
+
+.product .product-konten .product-isi .carousel .card .card-atas {
+  width: 100%;
+}
+
+.product .product-konten .product-isi .carousel .card .card-atas img {
+  object-fit: contain;
+}
+
+.product .product-konten .product-isi .carousel .card .card-bawah {
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+.product .product-konten .product-isi .carousel .card .card-bawah h5 {
+  font-size: 2rem;
+}
+
+.product .product-konten .product-isi .carousel .card .card-bawah p {
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.product .product-konten .product-isi .carousel .card .card-bawah .cube-price {
+  font-weight: bold;
+  color: #ff6600;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.product .product-konten .product-isi .carousel .card .card-bawah .cube-model {
+  display: flex;
+}
+.product .product-konten .product-isi .carousel .card .card-bawah .cube-model img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin: 5px 10px 10px 0;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.product .product-konten .product-isi .carousel .card .card-bawah .cube-model img:hover {
+  transform: translateY(-10px);
+}
+
+.product .product-konten .product-isi .carousel .card .card-bawah .cube-info {
+  color: white;
+  background-color: #bf53ff;
+  width: 100%;
+  border: none;
+  text-align: center;
+  font-size: 1.3rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  transition: 1s;
+}
+
+.product .product-konten .product-isi .carousel .card .card-bawah .cube-info:hover {
+  transform: scale(0.9);
+}
+
+.owl-dots {
+  position: absolute;
+  bottom: -2rem;
+}
+
+/* benefits */
+.benefits {
+  width: 100%;
+  padding: 2rem 4rem;
+  box-sizing: border-box;
+}
+
+.benefits .benefits-content {
+  width: 100%;
+  padding: 1rem;
+}
+
+.benefits .benefits-content .benefits-judul {
+  font-size: 3.5rem;
+  color: rgba(255, 120, 31, 0.8);
+  border-bottom: 1px solid #ff8b3d;
+}
+
+.benefits .benefits-content .benefits-isi {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.benefits .benefits-content .benefits-isi .benefits-row {
+  display: flex;
+  margin: 15px 0;
+}
+
+.benefits .benefits-content .benefits-isi .benefits-row .benefits-kiri {
+  flex: 1;
+  padding: 1rem;
+}
+
+.benefits .benefits-content .benefits-isi .benefits-row:nth-child(2) .benefits-kiri {
+  order: 1;
+}
+
+.benefits .benefits-content .benefits-isi .benefits-row .benefits-kiri img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.benefits .benefits-content .benefits-isi .benefits-row .benefits-kanan {
+  flex: 1;
+  padding: 1rem;
+}
+
+.benefits .benefits-content .benefits-isi .benefits-row .benefits-kanan h3 {
+  font-size: 3rem;
+  color: #bf53ff;
+  font-weight: bold;
+}
+
+.benefits .benefits-content .benefits-isi .benefits-row .benefits-kanan p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.benefits .benefits-content .benefits-isi .benefits-row .benefits-kanan button {
+  font-size: 1rem;
+  border-radius: 1rem;
+  font-weight: bold;
+  color: white;
+  border: none;
+  background-color: #ff781f;
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.benefits .benefits-content .benefits-isi .benefits-row .benefits-kanan button:hover {
+  transform: scale(0.9);
+}
+
+/* contact-us */
+
+.contact-us {
+  width: 100%;
+  padding: 2rem 4rem;
+}
+
+.contact-us .contact-content {
+  width: 100%;
+  padding: 1rem;
+}
+
+.contact-us .contact-content .contact-judul {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.contact-us .contact-content .contact-judul:nth-child(2) {
+  color: #ff8b3d;
+  font-size: 3.5rem;
+}
+
+.contact-us .contact-content .contact-isi {
+  background-color: var(--darkBackground);
+  border-radius: 0.5rem;
+  display: flex;
+  padding: 2rem;
+}
+
+.contact-us .contact-content .contact-isi .contact-information {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact-us .contact-content .contact-isi .contact-information .contact-information-text {
+  padding: 1rem;
+  margin-bottom: 10px;
+}
+
+.contact-us .contact-content .contact-isi .contact-information .contact-information-text h4 {
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.contact-us .contact-content .contact-isi .contact-information .contact-information-text p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1rem;
+}
+
+.contact-us .contact-content .contact-isi .contact-information .contact-information-isi {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.contact-us .contact-content .contact-isi .contact-information .contact-information-isi li {
+  font-size: 1.1rem;
+  padding: 1rem;
+  transition: 1s;
+  color: white;
+  font-weight: 500;
+}
+
+.contact-us .contact-content .contact-isi .contact-information .contact-information-isi li:hover {
+  background-color: rgba(255, 170, 255, 0.5);
+}
+.contact-us .contact-content .contact-isi .contact-information .contact-information-isi li span {
+  margin-left: 10px;
+}
+
+.contact-us .contact-content .contact-isi .contact-information .contact-information-media {
+  width: 50%;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-us .contact-content .contact-isi .contact-information .contact-information-media a {
+  font-size: 1.8rem;
+  color: #ff6600;
+  transition: 1s;
+  cursor: pointer;
+}
+.contact-us .contact-content .contact-isi .contact-information .contact-information-media a:hover {
+  color: white;
+  transform: translateY(-10px);
+}
+
+.fa-phone-alt,
+.fa-envelope,
+.fa-map-pin {
+  color: #bf53ff;
+}
+
+.contact-us .contact-content .contact-isi .contact-form {
+  flex: 2;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-us .contact-content .contact-isi .contact-form label {
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.contact-us .contact-content .contact-isi .contact-form .input {
+  margin-bottom: 10px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #ff6600;
+  outline: none;
+  color: white;
+  transition: 0.5s;
+}
+
+.contact-us .contact-content .contact-isi .contact-form .input:focus {
+  border-bottom: 1px solid #bf53ff;
+}
+
+.contact-us .contact-content .contact-isi .contact-form button {
+  background-color: #ff6600;
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+}
+.contact-us .contact-content .contact-isi .contact-form button:hover {
+  background-color: rgba(255, 120, 31, 0.8);
+}
+
+/* footer */
+.footer {
+  padding: 1rem;
+  display: flex;
+  background-color: rgba(18, 18, 18, 0.8);
+}
+
+.footer .footer-img {
+  flex: 0.5;
+  padding: 1rem;
+}
+
+.footer .footer-img img {
+  width: 100%;
+}
+.footer .footer-isi {
+  flex: 3;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer .footer-isi ul {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  list-style: none;
+}
+
+.footer .footer-isi ul li a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer .footer-isi ul li:first-child {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 1);
+  font-weight: bold;
+}
+
+.footer .footer-copyright-media {
+  flex: 1.5;
+  padding: 1rem;
+}
+
+.footer .footer-media {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+}
+
+.footer .footer-media a {
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.footer .footer-media a:hover {
+  transform: translateY(-10px);
+}
+
+.footer .footer-copyright-media .footer-copyright {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* cube details */
+.cube-info-details {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: rgba(18, 18, 18, 0.8);
+  animation: fadeIn 1s forwards;
+}
+
+.cube-info-details .cube-info-details-kotak {
+  width: 80%;
+  background-color: white;
+}
+.cube-info-details .cube-info-details-kotak .cube-details-judul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  border-bottom: 1px solid #bf53ff;
+}
+
+.cube-info-details .cube-info-details-kotak .cube-details-judul h2 {
+  color: #ff781f;
+  font-size: 3rem;
+}
+
+.cube-info-details .cube-info-details-kotak .cube-info-details-isi {
+  display: flex;
+}
+
+.cube-info-details .cube-info-details-kotak .cube-info-details-isi .info-details-isi-img {
+  flex: 1;
+  padding: 1rem;
+}
+
+.cube-info-details .cube-info-details-kotak .cube-info-details-isi .info-details-isi-img img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.cube-info-details .cube-info-details-kotak .cube-info-details-isi .info-details-isi-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+.cube-info-details .cube-info-details-kotak .cube-info-details-isi .info-details-isi-text h3 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.cube-info-details .cube-info-details-kotak .cube-info-details-isi .info-details-isi-text p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.cube-info-details .cube-info-details-kotak .cube-info-details-isi .info-details-isi-text .info-detail-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff6600;
+}
+
+.cube-info-details .cube-info-details-kotak .cube-info-details-isi .info-details-isi-text ul {
+  list-style: none;
+}
+
+.cube-info-details .cube-info-details-kotak .cube-info-details-isi .info-details-isi-text ul li {
+  font-size: 1.1rem;
+}
+
+.cube-info-details .cube-info-details-kotak .cube-info-details-isi .info-details-isi-text ul li span {
+  font-weight: bold;
+}
+
+.cube-info-details .cube-info-details-kotak .cube-info-details-isi .info-details-shop {
+  background-color: #bf53ff;
+  width: fit-content;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.5rem;
+  filter: drop-shadow(1px 1px 5px #ffaaff);
+  cursor: pointer;
+  transition: 1s;
+}
+
+.cube-info-details .cube-info-details-kotak .cube-info-details-isi .info-details-shop:hover {
+  transform: scale(0.9);
+}
+
+.cube-info-details .cube-info-details-kotak .close-details {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.cube-info-details .cube-info-details-kotak .close-details button {
+  width: 100%;
+  padding: 0.5rem 0.8rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  background-color: red;
+  transition: 0.5s;
+}
+
+.cube-info-details .cube-info-details-kotak .close-details button:hover {
+  background-color: rgba(255, 0, 0, 0.7);
+}
+
+.error {
+  position: fixed;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+  z-index: 98;
+}
+
+.error .error-content {
+  width: 30%;
+  padding: 1rem;
+  background-color: red;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.error .error-content h5 {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.error .error-content .error-isi {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: bold;
+  padding: 1rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-1200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-1200px);
+    opacity: 0;
+  }
+}
+
+/* responsive */
+
+@media screen and (max-width: 768px) {
+  /*navbar*/
+  .nav-bar {
+    position: relative;
+  }
+
+  .nav-bar .nav-isi .nav-text {
+    display: none;
+  }
+
+  .nav-bar .square-button {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    background-color: #ff6600;
+    width: 30px;
+    height: 30px;
+    top: 25px;
+    right: 25px;
+    transition: 0.8s;
+    z-index: 200;
+  }
+
+  .nav-responsive {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(18, 18, 18, 0.8);
+  }
+
+  .nav-responsive .nav-responsive-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+    width: 80%;
+    height: 80%;
+  }
+
+  .nav-responsive .nav-responsive-content li a {
+    font-size: 2.5rem;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 1s;
+    cursor: pointer;
+  }
+
+  .nav-responsive .nav-responsive-content li a:hover {
+    color: #ff6600;
+  }
+  /* home */
+
+  .home .home-isi .home-isi-kotak {
+    width: 100%;
+  }
+
+  .home .home-isi-kotak h1 {
+    font-size: 4rem;
+  }
+  .home .home-isi-kotak h4 {
+    font-size: 3rem;
+  }
+  .home .home-isi-kotak p {
+    font-size: 1rem;
+  }
+
+  .home .home-isi .home-isi-kotak .home-button {
+    width: 50%;
+  }
+
+  /* about */
+
+  .about .about-isi {
+    flex-direction: column;
+  }
+
+  .about .about-isi .about-text {
+    text-align: center;
+  }
+
+  .about .about-isi .about-text button {
+    width: 100%;
+  }
+
+  .about .about-isi .about-img {
+    padding: 1rem;
+    grid-template-rows: repeat(3, 100px);
+  }
+
+  .about .about-brand .brand-isi {
+    justify-items: center;
+  }
+
+  /* benefits */
+  .benefits .benefits-content .benefits-isi .benefits-row {
+    flex-direction: column;
+  }
+
+  .benefits .benefits-content .benefits-isi .benefits-row .benefits-kanan {
+    text-align: center;
+  }
+
+  .benefits .benefits-content .benefits-isi .benefits-row:nth-child(2) .benefits-kiri {
+    order: 0;
+  }
+
+  .benefits .benefits-content .benefits-isi .benefits-row .benefits-kanan button {
+    width: 100%;
+  }
+
+  /* contact */
+  .contact-us .contact-content .contact-isi {
+    flex-direction: column;
+  }
+  .contact-us .contact-content .contact-isi .contact-information {
+    text-align: center;
+  }
+  .contact-us .contact-content .contact-isi .contact-information .contact-information-media {
+    margin: auto;
+  }
+
+  .contact-us .contact-content .contact-form label {
+    text-align: center;
+  }
+
+  /* error */
+  .error .error-content {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  /* nav-bar */
+  .nav-bar .search .search-bar {
+    width: 100%;
+  }
+  /* home */
+  .home .home-isi .home-isi-kotak h4 {
+    font-size: 2rem;
+  }
+  .home .home-isi .home-isi-kotak p {
+    font-size: 0.8rem;
+  }
+
+  .home .home-isi .home-isi-kotak .home-button {
+    width: 100%;
+  }
+
+  /* about */
+  .about {
+    padding: 3rem 0;
+  }
+
+  .about .about-isi .about-text h2 {
+    font-size: 2.5rem;
+  }
+
+  /* product */
+  .product {
+    padding: 2rem 0;
+  }
+
+  .product .product-konten .product-judul {
+    text-align: center;
+  }
+
+  .product .product-isi .card .card-bawah h5 {
+    font-size: 2rem;
+  }
+  /* benefits */
+  .benefits {
+    padding: 2rem 0 0 0;
+  }
+
+  .benefits .benefits-content .benefits-judul {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .benefits .benefits-content .benefits-isi .benefits-row .benefits-kanan h3 {
+    font-size: 2rem;
+  }
+
+  /* contact-us */
+  .contact-us {
+    padding: 0 0;
+  }
+  /* footer */
+  .footer {
+    flex-direction: column;
+  }
+
+  /* cube details */
+
+  .cube-info-details .cube-info-details-kotak .cube-details-judul {
+    padding: 1rem 0;
+  }
+
+  .cube-info-details .cube-info-details-kotak .cube-details-judul h2 {
+    font-size: 2rem;
+  }
+
+  .cube-info-details .cube-info-details-kotak .cube-info-details-isi {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cube-info-details .cube-info-details-kotak .cube-info-details-isi .info-details-isi-text h3 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .cube-info-details .cube-info-details-kotak .cube-info-details-isi .info-details-isi-text .info-details-shop {
+    width: 100%;
+  }
+
+  .cube-info-details .cube-info-details-kotak .close-details {
+    padding: 0 1rem 1rem 1rem;
+  }
+  /* error */
+  .error .error-content {
+    width: 100%;
+  }
+}

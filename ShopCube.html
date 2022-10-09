@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RorCube</title>
+    <link rel="stylesheet" href="./style/ShopCube.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./style/all.min.css" />
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <div class="nav-isi">
+        <div class="nav-logo">
+          <div class="logo-RorCube">
+            <img src="img/rubik.png.png" alt="cubeImage" />
+            <a href="homeCube.html">RorCube</a>
+          </div>
+        </div>
+        <div class="nav-button">
+          <a href="homeCube.html"> <i class="fas fa-home"></i></a>
+          <div class="search-bar">
+            <input type="text" placeholder="Search cube here.." />
+            <i class="fas fa-search"></i>
+          </div>
+          <div class="shopping-cart">
+            <i class="fas fa-shopping-cart"></i>
+            <span>Cart</span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- shop -->
+    <section class="shop">
+      <div class="shop-judul">
+        <h1>Shop Your Favorite Cube here..</h1>
+      </div>
+      <div class="shop-isi">
+        <!-- shop list -->
+
+        <div class="shop-list">
+          <div class="shop-list-isi">
+            <div>Sale</div>
+            <ul>
+              <li><input type="checkbox" id="sale" /> <label for="sale">On Sale</label></li>
+            </ul>
+          </div>
+
+          <div class="shop-list-isi">
+            <div>Cube Theme</div>
+            <ul>
+              <li><input type="checkbox" id="sticker" /> <label for="sticker">sticker</label></li>
+              <li><input type="checkbox" id="stickerless" /> <label for="stickerless">stickerless</label></li>
+            </ul>
+          </div>
+
+          <div class="shop-list-isi">
+            <div>Brand</div>
+            <ul>
+              <li><input type="checkbox" id="gan" /> <label for="gan">Gan</label></li>
+              <li><input type="checkbox" id="moyu" /> <label for="moyu">Moyu</label></li>
+              <li><input type="checkbox" id="dayan" /> <label for="dayan">Dayan</label></li>
+              <li><input type="checkbox" id="qiyi" /> <label for="qiyi">Qiyi</label></li>
+              <li><input type="checkbox" id="yj" /> <label for="yj">YJ</label></li>
+            </ul>
+          </div>
+
+          <div class="show-more">
+            <div class="show-more-isi">
+              <i class="fas fa-plus"></i>
+              <span>Show More</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- shop cube isi -->
+
+        <div class="shop-cube">
+          <div class="shop-cube-judul">
+            <div class="judul-kanan">
+              <h3>3x3 Speed Cubes</h3>
+            </div>
+            <div class="judul-kiri">
+              <select name="CubeType" id="CubeType" onchange="changeType()">
+                <option value="2x2">2x2</option>
+                <option value="3x3">3x3</option>
+                <option value="4x4">4x4</option>
+              </select>
+              <div class="sort-product">
+                <i class="fas fa-sort"></i>
+                <select name="SortType" id="SortType">
+                  <option value="Popular">Popular</option>
+                  <option value="Featured">Feautured</option>
+                  <option value="A-Z">A-Z</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="shop-cube-isi"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- order -->
+
+    <div class="order">
+      <div class="order-judul">
+        <h3>Your Order</h3>
+        <button class="order-close">close</button>
+      </div>
+      <div class="order-isi">
+        <ul class="order-product"></ul>
+        <div class="order-total">
+          <span class="total-text">Total:</span>
+          <span class="total-price">$0</span>
+        </div>
+        <div class="order-placeOrder">
+          <button>Place Order</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+
+    <footer class="footer">
+      <div class="footer-img">
+        <img src="./img/rubik.png.png" alt="" />
+      </div>
+      <div class="footer-isi">
+        <ul class="footer-company">
+          <li>Company</li>
+          <li><a href="#">Our Story</a></li>
+          <li><a href="#">Benefits</a></li>
+          <li><a href="#">Term & Condition</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+        <ul class="footer-explore">
+          <li>Explore</li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Product</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Sign in</a></li>
+        </ul>
+        <ul class="footer-product">
+          <li>Product</li>
+          <li><a href="#">Rubik Cube</a></li>
+          <li><a href="#">Lube</a></li>
+          <li><a href="#">Magnet</a></li>
+          <li><a href="#">Pouch</a></li>
+        </ul>
+      </div>
+      <div class="footer-copyright-media">
+        <div class="footer-media">
+          <a>
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a>
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a>
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+        <div class="footer-copyright">&copy;2021 RorCompany</div>
+      </div>
+    </footer>
+
+    <script src="./script/ShopCube.js"></script>
+    <script src="./script/all.min.js"></script>
+  </body>
+</html>

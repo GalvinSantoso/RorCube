@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RorCube</title>
+    <link rel="stylesheet" href="./style/homeCube.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="./style/all.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <div class="nav-isi">
+        <div class="nav-logo">
+          <img src="img/rubik.png.png" alt="cubeImage" />
+          <a href="">RorCube</a>
+        </div>
+
+        <ul class="nav-text">
+          <li><a href="#home" class="nav-text-isi">Home</a></li>
+          <li><a href="#about" class="nav-text-isi">About</a></li>
+          <li><a href="#product" class="nav-text-isi">Product</a></li>
+          <li><a href="ShopCube.html" class="nav-text-isi">Shop</a></li>
+          <li><a href="#contact-us" class="nav-text-sign">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="search">
+        <div class="search-bar">
+          <input type="text" placeholder="Search your cube here.." />
+          <button>Search</button>
+        </div>
+      </div>
+      <!-- square-button -->
+      <div class="square-button"></div>
+    </nav>
+    <div class="nav-responsive">
+      <ul class="nav-responsive-content">
+        <li><a href="#home" class="nav-responsive-isi">Home</a></li>
+        <li><a href="#about" class="nav-responsive-isi">About</a></li>
+        <li><a href="#product" class="nav-responsive-isi">Product</a></li>
+        <li><a href="ShopCube.html" class="nav-responsive-isi">Shop</a></li>
+        <li><a href="#contact-us" class="nav-responsive-sign">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <section class="home" id="home">
+      <video src="video/backgroundRubik.mp4" autoplay loop></video>
+      <div class="home-isi">
+        <div class="home-isi-kotak">
+          <h1>RorCube</h1>
+          <h4>the best Rubik's Cube Shop</h4>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio itaque repellendus quidem, deserunt ducimus nobis totam assumenda consectetur laudantium quod officia eum cum mollitia voluptatem nostrum dignissimos qui rem
+            perspiciatis.
+          </p>
+          <div class="home-button">
+            <a href="ShopCube.html"><button>Shop Now</button></a>
+            <a href=""><button>Sign In</button></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-isi">
+        <div class="about-text">
+          <h2>About <span>RorCube</span></h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aspernatur sequi qui aperiam odio vel nobis, ducimus ad sapiente quasi suscipit quae harum beatae! Aut labore placeat!</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In delectus natus asperiores optio cupiditate eligendi quo obcaecati aut corporis.</p>
+          <button>read more</button>
+        </div>
+        <div class="about-img">
+          <div class="about-one"></div>
+          <div class="about-two"></div>
+          <div class="about-three"></div>
+        </div>
+      </div>
+      <div class="about-brand">
+        <div class="brand-judul">
+          <h3>Work With Our Trusted Brand</h3>
+        </div>
+        <div class="brand-isi">
+          <img src="img/brand1.jpg" alt="" data-aos="zoom-in" data-aos-duration="1500" />
+          <img src="img/brand2.jpg" alt="" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="500" />
+          <img src="img/brand3.jpg" alt="" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1000" />
+          <img src="img/brand4.jpg" alt="" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1500" />
+          <img src="img/brand5.jpg" alt="" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="2000" />
+        </div>
+      </div>
+    </section>
+
+    <section class="product" id="product">
+      <div class="product-konten">
+        <div class="product-judul">
+          <h3>Our best Seller Product</h3>
+        </div>
+        <div class="product-isi">
+          <div class="carousel owl-carousel owl-theme">
+            <!-- card -->
+            <div class="card">
+              <div class="card-atas">
+                <img src="./img/produk1.jpg" alt="" />
+              </div>
+              <div class="card-bawah">
+                <h5>Moyu RS3M 2021</h5>
+
+                <div class="cube-price">$15.10</div>
+                <div class="cube-model">
+                  <img src="./img/sticker.png" alt="Model Sticker" />
+                  <img src="./img/stickerless.png" alt="Model Stickerless" />
+                </div>
+                <button class="cube-info">Cube Details</button>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-atas">
+                <img src="./img/produk2.jpg" alt="" />
+              </div>
+              <div class="card-bawah">
+                <h5>Dayan Guhong V4M</h5>
+
+                <div class="cube-price">$18.20</div>
+                <div class="cube-model">
+                  <img src="./img/sticker.png" alt="Model Sticker" />
+                  <img src="./img/stickerless.png" alt="Model Stickerless" />
+                </div>
+                <button class="cube-info">Cube Details</button>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-atas">
+                <img src="./img/produk3.jpg" alt="" />
+              </div>
+              <div class="card-bawah">
+                <h5>Gan 11 Magnet Pro</h5>
+
+                <div class="cube-price">$40.70</div>
+                <div class="cube-model">
+                  <img src="./img/sticker.png" alt="Model Sticker" />
+                  <img src="./img/stickerless.png" alt="Model Stickerless" />
+                </div>
+                <button class="cube-info">Cube Details</button>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-atas">
+                <img src="./img/produk4.jpg" alt="" />
+              </div>
+              <div class="card-bawah">
+                <h5>New Gan 12 Maglev</h5>
+
+                <div class="cube-price">$25.10</div>
+                <div class="cube-model">
+                  <img src="./img/sticker.png" alt="Model Sticker" />
+                  <img src="./img/stickerless.png" alt="Model Stickerless" />
+                </div>
+                <button class="cube-info">Cube Details</button>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-atas">
+                <img src="./img/produk5.jpg" alt="" />
+              </div>
+              <div class="card-bawah">
+                <h5>MsCube MS3V1-M</h5>
+
+                <div class="cube-price">$32.00</div>
+                <div class="cube-model">
+                  <img src="./img/sticker.png" alt="Model Sticker" />
+                  <img src="./img/stickerless.png" alt="Model Stickerless" />
+                </div>
+                <button class="cube-info">Cube Details</button>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-atas">
+                <img src="./img/produk6.jpg" alt="" />
+              </div>
+              <div class="card-bawah">
+                <h5>Weilong WRM 2021</h5>
+
+                <div class="cube-price">$9.20</div>
+                <div class="cube-model">
+                  <img src="./img/sticker.png" alt="Model Sticker" />
+                  <img src="./img/stickerless.png" alt="Model Stickerless" />
+                </div>
+                <button class="cube-info">Cube Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- info details -->
+    <div class="cube-info-details">
+      <div class="cube-info-details-kotak">
+        <div class="cube-details-judul">
+          <h2>Cube Details</h2>
+        </div>
+        <div class="cube-info-details-isi">
+          <div class="info-details-isi-img">
+            <img src="./img/produk1.jpg" alt="" />
+          </div>
+          <div class="info-details-isi-text"></div>
+        </div>
+        <div class="close-details">
+          <button>Close</button>
+        </div>
+      </div>
+    </div>
+
+    <section class="benefits">
+      <div class="benefits-content">
+        <h3 class="benefits-judul">Our Benefits</h3>
+        <div class="benefits-isi">
+          <div class="benefits-row" data-aos="fade-up" data-aos-duration="1500">
+            <div class="benefits-kiri">
+              <img src="./img/benefits1.jpg" alt="" />
+            </div>
+            <div class="benefits-kanan">
+              <h3>Full Customization for Your Cubes</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum eius illo nam, beatae eaque similique velit voluptate illum recusandae dicta cum asperiores ut impedit eligendi quos consequatur blanditiis quasi rem.</p>
+              <button>Read More</button>
+            </div>
+          </div>
+          <div class="benefits-row" data-aos="fade-up" data-aos-duration="1500">
+            <div class="benefits-kiri">
+              <img src="./img/benefits2.jpg" alt="" />
+            </div>
+            <div class="benefits-kanan">
+              <h3>Complement Rubik's Accessories</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum eius illo nam, beatae eaque similique velit voluptate illum recusandae dicta cum asperiores ut impedit eligendi quos consequatur blanditiis quasi rem.</p>
+              <button>Read More</button>
+            </div>
+          </div>
+
+          <div class="benefits-row" data-aos="fade-up" data-aos-duration="1500">
+            <div class="benefits-kiri">
+              <img src="./img/benefits3.jpg" alt="" />
+            </div>
+            <div class="benefits-kanan">
+              <h3>Fast Response and Shipping</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum eius illo nam, beatae eaque similique velit voluptate illum recusandae dicta cum asperiores ut impedit eligendi quos consequatur blanditiis quasi rem.</p>
+              <button>Read More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-us" id="contact-us">
+      <div class="contact-content">
+        <h3 class="contact-judul">Any Question About Rubik's Cube? Get in Touch!</h3>
+        <h3 class="contact-judul">Contact Us</h3>
+        <div class="contact-isi">
+          <div class="contact-information">
+            <div class="contact-information-text">
+              <h4>Contact Information</h4>
+              <p>Hey Speed Cubers, if you have any questions please let us know. Our friendly team is always here to chat.</p>
+            </div>
+            <ul class="contact-information-isi">
+              <li>
+                <i class="fas fa-map-pin"></i>
+                <span>Sudirman Street No.25, Jakarta</span>
+              </li>
+              <li>
+                <i class="fas fa-phone-alt"></i>
+                <span>02193849302</span>
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <span>RorCube@gmail.com</span>
+              </li>
+            </ul>
+            <div class="contact-information-media">
+              <a>
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a>
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a>
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+          <form action="submit" class="contact-form">
+            <label for="name">Name</label>
+            <input class="input" type="text" id="name" required />
+
+            <label for="email">Email</label>
+            <input class="input" type="email" id="email" required />
+
+            <label for="phone">Phone</label>
+            <input class="input" type="text" id="phone" required />
+
+            <label for="message">Message</label>
+            <textarea id="message" cols="30" rows="10" class="input" required></textarea>
+
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <div class="error">
+      <div class="error-content">
+        <h5>error</h5>
+        <div class="error-isi"></div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-img">
+        <img src="./img/rubik.png.png" alt="" />
+      </div>
+      <div class="footer-isi">
+        <ul class="footer-company">
+          <li>Company</li>
+          <li><a href="#">Our Story</a></li>
+          <li><a href="#">Benefits</a></li>
+          <li><a href="#">Term & Condition</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+        <ul class="footer-explore">
+          <li>Explore</li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Product</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Sign in</a></li>
+        </ul>
+        <ul class="footer-product">
+          <li>Product</li>
+          <li><a href="#">Rubik Cube</a></li>
+          <li><a href="#">Lube</a></li>
+          <li><a href="#">Magnet</a></li>
+          <li><a href="#">Pouch</a></li>
+        </ul>
+      </div>
+      <div class="footer-copyright-media">
+        <div class="footer-media">
+          <a>
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a>
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a>
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+        <div class="footer-copyright">&copy;2021 RorCompany</div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./script/homeCube.js"></script>
+    <script src="./script/all.min.js"></script>
+  </body>
+</html>

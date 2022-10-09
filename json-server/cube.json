@@ -1,0 +1,136 @@
+{
+  "3x3": [
+    {
+      "name": "Moyu Weilong WRM 2021",
+      "price": 20.1,
+      "type": "3x3",
+      "size": "56mm",
+      "brand": "Moyu",
+      "img": "./imgShop/3x3/Weilong WRM.jpg"
+    },
+    {
+      "name": "Gan 11M Pro",
+      "price": 59.0,
+      "type": "3x3",
+      "size": "56mm",
+      "brand": "Gan",
+      "img": "./imgShop/3x3/Gan 11M Pro.jpg"
+    },
+    {
+      "name": "Moyu RS3M 2021",
+      "price": 18.1,
+      "type": "3x3",
+      "size": "56mm",
+      "brand": "Moyu",
+      "img": "./imgShop/3x3/RS3M.jpg"
+    },
+    {
+      "name": "Dayan Guhong V4M",
+      "price": 28.0,
+      "type": "3x3",
+      "size": "57mm",
+      "brand": "Dayan",
+      "img": "./imgShop/3x3/Guhong V4M.jpg"
+    },
+    {
+      "name": "Qiyi Valk 3M",
+      "price": 18.8,
+      "type": "3x3",
+      "size": "56mm",
+      "brand": "Qiyi",
+      "img": "./imgShop/3x3/Valk 3M.jpg"
+    },
+    {
+      "name": "MS3-V1 Cube",
+      "price": 29.9,
+      "type": "3x3",
+      "size": "56mm",
+      "brand": "MsCube",
+      "img": "./imgShop/3x3/ms3v1.jpg"
+    }
+  ],
+  "2x2": [
+    {
+      "name": "Qiyi X-Man Flare",
+      "price": 12.9,
+      "type": "2x2",
+      "size": "46mm",
+      "brand": "Qiyi",
+      "img": "./imgShop/2x2/x-man flare.jpg"
+    },
+    {
+      "name": "Gan 251M Leap",
+      "price": 32.9,
+      "type": "2x2",
+      "size": "51mm",
+      "brand": "Gan",
+      "img": "./imgShop/2x2/gan 251 m.jpg"
+    },
+    {
+      "name": "Qiyi MS2",
+      "price": 2.5,
+      "type": "2x2",
+      "size": "50mm",
+      "brand": "Qiyi",
+      "img": "./imgShop/2x2/ms2.jpg"
+    },
+    {
+      "name": "Meilong 2M",
+      "price": 6.4,
+      "type": "2x2",
+      "size": "50mm",
+      "brand": "Moyu",
+      "img": "./imgShop/2x2/meilong 2m.jpg"
+    },
+    {
+      "name": "YJ MGC",
+      "price": 10.3,
+      "type": "2x2",
+      "size": "50mm",
+      "brand": "YJ",
+      "img": "./imgShop/2x2/mgc2.jpg"
+    },
+    {
+      "name": "YJ MGC 2 Elite",
+      "price": 22.3,
+      "type": "2x2",
+      "size": "50mm",
+      "brand": "YJ",
+      "img": "./imgShop/2x2/mgc2 elite.jpg"
+    }
+  ],
+  "4x4": [
+    {
+      "name": "YJ MGC 4x4 M",
+      "price": 28.3,
+      "type": "4x4",
+      "size": "60mm",
+      "brand": "YJ",
+      "img": "./imgShop/4x4/mgc 4x4 M.jpg"
+    },
+    {
+      "name": "Gan 460M",
+      "price": 48.2,
+      "type": "4x4",
+      "size": "60mm",
+      "brand": "Gan",
+      "img": "./imgShop/4x4/460M.jpg"
+    },
+    {
+      "name": "Moyu Meilong 4M",
+      "price": 24.9,
+      "type": "4x4",
+      "size": "60mm",
+      "brand": "Moyu",
+      "img": "./imgShop/4x4/meilong 4M.jpg"
+    },
+    {
+      "name": "Qiyi Qiyuan S",
+      "price": 14.4,
+      "type": "4x4",
+      "size": "58mm",
+      "brand": "Qiyi",
+      "img": "./imgShop/4x4/qiyuan.jpg"
+    }
+  ]
+}
